@@ -1,9 +1,10 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <time.h>
 #include "GasEnviroment.h"
 int main()
 {
-	srand(NULL);
+	srand(time(NULL));
     int num_of_sreda;
 	std::cout << "¬ведите номер системы ( газ, газ сжатый, вода, вода нагрета€)";
     std::cin >> num_of_sreda;

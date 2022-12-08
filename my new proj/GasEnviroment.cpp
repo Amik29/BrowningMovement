@@ -4,19 +4,20 @@
 #include <iostream>
 void GasEnviroment::ModulateBrowningMovement(sf::RenderWindow& window)
 {
-	countOfMolecules = 25;
+	countOfMolecules = 40;
 	
 	std::list<Molecule*> envmol;
 
 	for (int i = 0; i < countOfMolecules; i++) {
-		envmol.push_back(new MoleculeGas(25));
+		envmol.push_back(new MoleculeGas(3));
 	}
 
-    Molecule n(40);
+    
     int k=0;
 
         while (window.isOpen())
         {
+            window.clear();
             sf::Event event;
             while (window.pollEvent(event))
             {

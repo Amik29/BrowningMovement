@@ -9,7 +9,7 @@ Molecule::Molecule(int m)
 
 void Molecule::CheckCollisionWithBoundaries()
 {
-	if (x > 800) x = 0;
+	if (x >= 800) x = 0;
 	if (y > 800) y = 0;
 	if (x < 0) x = 800;
 	if (y < 0) y = 800;
