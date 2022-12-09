@@ -148,9 +148,10 @@
     <ClCompile Include="GasEnviroment.cpp" />
     <ClCompile Include="HeatedWaterEnviroment.cpp" />
     <ClCompile Include="molecule.cpp" />
+    <ClCompile Include="MoleculeDust.cpp" />
     <ClCompile Include="MoleculeGas.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Source1.cpp" />
+    <ClCompile Include="MoleculeDust.h" />
     <ClCompile Include="WaterEnviroment.cpp" />
   </ItemGroup>
   <ItemGroup>
