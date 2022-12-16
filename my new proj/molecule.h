@@ -1,7 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <random>
-#include <list>
+#include <math.h>
 class Molecule
 {
 public:
@@ -9,7 +9,7 @@ public:
 	void CheckCollisionWithBoundaries();
 	void updateMolecule();
 	void draw(sf::RenderWindow &window);
-
+	void CollisionLeoJo(Molecule &other);
 protected:
 	int m;
 	double dx;

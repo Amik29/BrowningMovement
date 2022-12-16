@@ -1,5 +1,5 @@
 #include "molecule.h"
-
+#include <iostream>
 Molecule::Molecule(int m)
 {
 	this->m = m;
@@ -28,4 +28,28 @@ void Molecule::updateMolecule()
 void Molecule::draw(sf::RenderWindow& window)
 {
 	window.draw(mymol);
+}
+
+void Molecule::CollisionLeoJo(Molecule& other)
+{
+	double vec_x = this->x - other.x;
+	double vec_y = this->y - other.y;
+
+	double length = sqrt(vec_x * vec_x + vec_y * vec_y);
+
+	if (length >= 500) return;
+	else if (length < 500 && length>100) {
+		if (x < other.x) dx += 0.00001;
+		else dx -= 0.00001;
+		if (y < other.y) dy += 0.00001;
+		else dy -= 0.00001;
+	}
+	else {
+	}
+
+
+
+	//std::cout << length;
+
+
 }
