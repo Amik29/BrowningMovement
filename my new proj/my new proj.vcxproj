@@ -88,10 +88,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalUsingDirectories>C:\Users\amik29\source\repos\BrowningMovement\SFML-2.5.1\include;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>C:\Users\amik29\source\repos\BrowningMovement\SFML-2.5.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\amik29\source\repos\BrowningMovement\SFML-2.5.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-window-d.lib;sfml-graphics-d.lib;sfml-system-d.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -116,13 +120,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;SFML_DYNAMIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\khrom\Desktop\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\amik29\source\repos\BrowningMovement\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>C:\Users\amik29\source\repos\BrowningMovement\SFML-2.5.1\include;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\khrom\Desktop\SFML-2.5.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-window-d.lib;sfml-graphics-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\amik29\source\repos\BrowningMovement\SFML-2.5.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-window-d.lib;sfml-graphics-d.lib;sfml-system-d.lib;%(AdditionalDependencies);sfml-window-d.lib;sfml-graphics-d.lib;sfml-system-d.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -146,21 +151,17 @@
   <ItemGroup>
     <ClCompile Include="Environment.cpp" />
     <ClCompile Include="GasEnviroment.cpp" />
-    <ClCompile Include="HeatedWaterEnviroment.cpp" />
     <ClCompile Include="molecule.cpp" />
-    <ClCompile Include="MoleculeDust.cpp" />
     <ClCompile Include="MoleculeGas.cpp" />
+    <ClCompile Include="Particle.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="MoleculeDust.h" />
-    <ClCompile Include="WaterEnviroment.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Environment.h" />
     <ClInclude Include="GasEnviroment.h" />
     <ClInclude Include="molecule.h" />
-    <ClInclude Include="HeatedWaterEnviroment.h" />
     <ClInclude Include="MoleculeGas.h" />
-    <ClInclude Include="WaterEnviroment.h" />
+    <ClInclude Include="Particle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

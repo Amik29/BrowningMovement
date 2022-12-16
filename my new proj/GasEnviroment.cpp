@@ -1,21 +1,19 @@
 #include "GasEnviroment.h"
 #include "MoleculeGas.h"
-#include "MoleculeDust.h"
 #include <list>
 #include <iostream>
 void GasEnviroment::ModulateBrowningMovement(sf::RenderWindow& window)
 {
-	countOfMolecules = 40;
+	countOfMolecules = 10;
 	
 	std::list<Molecule*> envmol;
     
 
 	for (int i = 0; i < countOfMolecules; i++) {
         
-		envmol.push_back(new MoleculeGas(3));
+		envmol.push_back(new MoleculeGas(20));
 	}
 
-    envmol.push_back(new MoleculeDust(25));
 
         while (window.isOpen())
         {

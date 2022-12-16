@@ -24,22 +24,13 @@
     <ClCompile Include="Environment.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="WaterEnviroment.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="MoleculeGas.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="HeatedWaterEnviroment.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="GasEnviroment.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="MoleculeDust.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClCompile>
-    <ClCompile Include="MoleculeDust.cpp">
+    <ClCompile Include="Particle.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,19 +38,16 @@
     <ClInclude Include="Environment.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="WaterEnviroment.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="MoleculeGas.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="HeatedWaterEnviroment.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="GasEnviroment.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="molecule.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
