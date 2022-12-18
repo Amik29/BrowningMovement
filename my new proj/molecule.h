@@ -9,7 +9,7 @@ public:
 	void CheckCollisionWithBoundaries();
 	void updateMolecule();
 	void draw(sf::RenderWindow &window);
-	void CollisionLeoJo(Molecule &other);
+	void CollisionLeoJo(Molecule &other,int temperature = 36);
 protected:
 	int m;
 	double dx;

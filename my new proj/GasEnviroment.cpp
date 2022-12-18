@@ -4,7 +4,10 @@
 #include <iostream>
 void GasEnviroment::ModulateBrowningMovement(sf::RenderWindow& window)
 {
-	countOfMolecules = 10;
+
+	countOfMolecules;
+    std::cout << "Write count of molecules";
+    std::cin >> countOfMolecules;
 	
 	std::vector<Molecule*> envmol;
     
